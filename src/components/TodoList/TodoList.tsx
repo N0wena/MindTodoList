@@ -15,7 +15,7 @@ import styles from './TodoList.module.scss'
  * Components
  */
 import { TodoItem } from '../TodoItem/TodoItem'
-import { ArrowIcon } from '../icons/arrow.tsx';
+import { ArrowIcon } from '../icons/arrow';
 
 type TListProps = {
   list: TItem[]
@@ -53,6 +53,7 @@ export function TodoList ({ list, setList }: TListProps) {
           <ArrowIcon />
         </div>
         <input
+          data-testid="input"
           value={inputValue}
           placeholder='What needs to be done?'
           onKeyDown={handleKeyDown}

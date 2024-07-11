@@ -6,15 +6,15 @@ import { useMemo, useState } from 'react'
 /**
  * Utils
  */
-import { defaultList } from '../constants/constants.ts'
+import { defaultList } from '../constants/constants'
 import styles from './TodoCard.module.scss'
 
 /**
  * Components
  */
-import { TodoList } from '../TodoList/TodoList.tsx'
-import { TodoActions } from '../TodoActions/TodoActions.tsx'
-import { TFilters } from '../types/types.ts'
+import { TodoList } from '../TodoList/TodoList'
+import { TodoActions } from '../TodoActions/TodoActions'
+import { TFilters } from '../types/types'
 
 export function TodoCard() {
   const [list, setList] = useState(defaultList)

@@ -8,7 +8,7 @@ import { Dispatch, SetStateAction, useMemo } from 'react';
  */
 import { TFilters, TItem } from '../types/types';
 import styles from './TodoActions.module.scss';
-import { actions } from '../constants/constants.ts'
+import { actions } from '../constants/constants'
 
 
 type TActionsProps = {
@@ -46,6 +46,7 @@ export function TodoActions ({
       <ul className={styles.todoFilters}>
         {actions.map((value) => (
           <li
+            data-testid={value}
             className={value === activeFilter ? styles.active : ''}
             key={value}
             onClick={() => changeFilter(value)}
