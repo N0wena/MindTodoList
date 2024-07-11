@@ -1,0 +1,21 @@
+@import './styles/index.scss';
+
+.view {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Roboto Light, a sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  color: #E9D9D8;
+  margin-bottom: 8px;
+}

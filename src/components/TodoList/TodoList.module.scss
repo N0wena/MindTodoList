@@ -1,0 +1,34 @@
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: white;
+  box-shadow: 0 1px 1px #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.inputContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.inputContainer input::placeholder {
+  color: #e6e6e6;
+  font-style: italic;
+}
+
+.iconWrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e6e6e6;
+  margin-right: 16px;
+}
